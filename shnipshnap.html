@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>cartoon cats dancing</title>
+<link rel="iconka" href="kitty.png" type="image">
+    </head>
+
+    <body background="photo_2023-02-10_16-55-49.jpg">
+    <div id="vidosik"></div>
+        <script>
+            function addVideo() {
+                var videlem=document.createElement("video");
+                videlem.width=700;
+                videlem.height=600;
+                videlem.controls=true;
+                videlem.autoplay=true;
+                videlem.loop=true;
+                var sourceMP4=document.createElement("source"); 
+                sourceMP4.type="video/mp4";
+                sourceMP4.src="IMG_5001.MP4";
+                videlem.appendChild(sourceMP4);
+                document.getElementById("vidosik").appendChild(videlem);
+            }
+            addVideo();
+        </script>
+    </body>
+</html>
